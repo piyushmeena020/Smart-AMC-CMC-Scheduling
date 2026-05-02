@@ -20,7 +20,7 @@ It automates scheduling, avoids conflicts between vendors, tracks contract lifec
   - Efficient vendor assignment  
 
 - 🔔 **Automated Alerts**
-  - Contract expiry reminders (90/60/30 days)  
+  - Contract expiry reminders
 
 - 👥 **Role-Based Access**
   - Admin, Engineer, and Management dashboards  
@@ -46,7 +46,7 @@ It automates scheduling, avoids conflicts between vendors, tracks contract lifec
 - Tailwind CSS  
 
 **Backend**
-- Node.js  
+- Next.js  
 - Express.js  
 
 **Database**
@@ -60,19 +60,6 @@ It automates scheduling, avoids conflicts between vendors, tracks contract lifec
 
 ---
 
-## 📂 Project Structure
-
-Smart-AMC-CMC-Scheduling/
-│
-├── frontend/        # Frontend (React)
-├── backend/         # Backend (Node.js)
-├── database/        # Database configs
-├── public/          # Static files
-├── .env             # Environment variables
-└── README.md
-
----
-
 ## ⚙️ Installation & Setup
 
 ### 1. Clone Repository
@@ -80,9 +67,28 @@ Smart-AMC-CMC-Scheduling/
 ```bash
 git clone https://github.com/piyushmeena020/Smart-AMC-CMC-Scheduling.git
 cd Smart-AMC-CMC-Scheduling
+```
 
 ### 2. Install Dependencies
-npm install
 
-## Run the Project
+```bash
+npm install
+```
+
+### 3. Setup Environment Variables
+
+Create a `.env` file and add:
+
+```env
+DATABASE_URL=your_neon_database_url
+CLERK_SECRET_KEY=your_clerk_secret_key
+NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=your_clerk_publishable_key
+```
+
+### 4. Run the Project
+
+```bash
 npm run dev
+```
+
+---
